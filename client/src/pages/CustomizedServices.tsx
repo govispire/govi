@@ -109,7 +109,7 @@ export default function CustomizedServices() {
               playsInline
               poster={commercialPhotographyImages[2]}
             >
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-visual-artists-working-together-in-a-studio-meeting-42759-large.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-1.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/70"></div>
           </div>
