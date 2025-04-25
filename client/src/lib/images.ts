@@ -79,7 +79,7 @@ const contentTypes = [
       title: "Strategic Brand Content",
       description: "Thought leadership articles, blog posts, and other content designed to position your brand as an authority in your industry.",
       icon: "fa-file-alt",
-      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-fields-6-1024x1536.webp"
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_32-2048x1366.webp"
     },
     {
       title: "Video Content",
