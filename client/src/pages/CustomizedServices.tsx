@@ -44,19 +44,19 @@ export default function CustomizedServices() {
       title: "Luxury Restaurant Launch",
       category: "Integrated Campaign",
       description: "A comprehensive brand launch including visual identity, interior photography, menu design, and social media content strategy.",
-      image: luxuryBrandImages[4]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp"
     },
     {
       title: "Fashion Line Seasonal Campaign",
       category: "Campaign Development",
       description: "Seasonal campaign including photography, video content, and AR experiences for both digital and physical brand touchpoints.",
-      image: luxuryBrandImages[2]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp"
     },
     {
       title: "Tech Startup Brand Experience",
       category: "Experiential Design",
       description: "Complete brand world creation featuring product photography, launch event design, and interactive digital experiences.",
-      image: videoProductionImages[3]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.5-scaled.webp"
     }
   ];
 
@@ -210,7 +210,7 @@ export default function CustomizedServices() {
                   </div>
                   <div className="space-y-4 mt-8">
                     <div className="h-64 rounded-lg overflow-hidden shadow-lg">
-                      <img src={videoProductionImages[2]} alt="Custom Service 3" className="w-full h-full object-cover" />
+                      <img src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_19.webp" alt="Custom Service 3" className="w-full h-full object-cover" />
                     </div>
                     <div className="h-48 rounded-lg overflow-hidden shadow-lg">
                       <img src={designPortfolioImages[1]} alt="Custom Service 4" className="w-full h-full object-cover" />
