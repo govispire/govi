@@ -74,8 +74,13 @@ const portfolioShowcase = [
   galleryImages[0]
 ];
 
-//Example of where the change might be applied.  This is an assumption.
 const contentTypes = [
+    {
+      title: "Brand Visual Identity",
+      description: "Crafting cohesive logos, typography, and color systems for impact",
+      icon: "fa-paint-brush",
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Men_13.webp"
+    },
     {
       title: "Strategic Brand Content",
       description: "Thought leadership articles, blog posts, and other content designed to position your brand as an authority in your industry.",
