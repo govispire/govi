@@ -1,5 +1,6 @@
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
+import ScrollProgressBar from "@/components/ScrollProgressBar";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import BrandVisualIdentity from "@/pages/BrandVisualIdentity";
@@ -34,6 +35,7 @@ function Router() {
 function App() {
   return (
     <>
+      <ScrollProgressBar />
       <Router />
       <Toaster />
     </>
