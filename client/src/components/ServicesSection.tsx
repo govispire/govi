@@ -8,7 +8,7 @@ const services = [
   {
     title: "Brand Visual Identity",
     description: "Crafting cohesive logos, typography, and color systems for lasting impact and recognition.",
-    image: luxuryBrandImages[1],
+    image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Men_13.webp",
     link: "/brand-visual-identity",
     buttonText: "Explore Now",
     icon: "fa-palette"
