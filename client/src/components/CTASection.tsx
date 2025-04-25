@@ -2,6 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { portfolioShowcase } from '@/lib/images';
 import { useState } from 'react';
+import { Link } from 'wouter';
 
 export default function CTASection() {
   const controls = useAnimation();
@@ -72,13 +73,13 @@ export default function CTASection() {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              <a 
-                href="#" 
+              <Link 
+                to="/contact" 
                 className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-medium text-lg rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
               >
                 <span className="mr-3">Schedule a Call</span>
                 <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"></i>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
           
