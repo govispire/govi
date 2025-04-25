@@ -54,6 +54,7 @@ const galleryImages = [
 
 // Service section gallery images
 const possibilitiesImages = [
+  "https://vieoproductions.com/wp-content/uploads/2025/03/home-reveal-2.webp",
   "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_1.webp",
   "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_19.webp",
   "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp",
