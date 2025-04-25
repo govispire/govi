@@ -24,7 +24,7 @@ const services = [
   {
     title: "Commercial Photography",
     description: "High-quality visual assets that showcase your products and services in the best possible light.",
-    image: commercialPhotographyImages[0],
+    image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_11-768x768.webp",
     link: "#",
     buttonText: "Explore Now",
     icon: "fa-camera"
