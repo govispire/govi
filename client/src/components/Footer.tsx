@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'wouter';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -32,9 +33,11 @@ export default function Footer() {
   ];
   
   const footerNavLinks = [
-    { text: "Home", url: "#" },
-    { text: "Services", url: "#services" },
-    { text: "Contact", url: "#contact" },
+    { text: "Home", url: "/" },
+    { text: "Brand Visual Identity", url: "/brand-visual-identity" },
+    { text: "Strategic Brand Content", url: "/strategic-brand-content" },
+    { text: "Customized Services", url: "/customized-services" },
+    { text: "Contact", url: "/contact" },
     { text: "Privacy Policy", url: "#" },
     { text: "Terms of Service", url: "#" }
   ];
@@ -78,13 +81,23 @@ export default function Footer() {
             <ul className="space-y-4">
               {footerNavLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.url} 
-                    className="text-gray-400 hover:text-amber-400 transition-colors duration-300 flex items-center"
-                  >
-                    <i className="fas fa-chevron-right text-xs mr-2 text-amber-400"></i>
-                    {link.text}
-                  </a>
+                  {link.url.startsWith('/') ? (
+                    <Link 
+                      href={link.url}
+                      className="text-gray-400 hover:text-amber-400 transition-colors duration-300 flex items-center"
+                    >
+                      <i className="fas fa-chevron-right text-xs mr-2 text-amber-400"></i>
+                      {link.text}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.url} 
+                      className="text-gray-400 hover:text-amber-400 transition-colors duration-300 flex items-center"
+                    >
+                      <i className="fas fa-chevron-right text-xs mr-2 text-amber-400"></i>
+                      {link.text}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
