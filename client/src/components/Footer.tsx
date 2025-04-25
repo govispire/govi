@@ -35,6 +35,7 @@ export default function Footer() {
   const footerNavLinks = [
     { text: "Home", url: "/" },
     { text: "Brand Visual Identity", url: "/brand-visual-identity" },
+    { text: "Creative Video Solution", url: "/creative-video-solution" },
     { text: "Strategic Brand Content", url: "/strategic-brand-content" },
     { text: "Customized Services", url: "/customized-services" },
     { text: "Contact", url: "/contact" },
