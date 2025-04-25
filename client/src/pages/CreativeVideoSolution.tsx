@@ -108,7 +108,7 @@ export default function CreativeVideoSolution() {
               playsInline
               poster={videoProductionImages[1]}
             >
-              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_productions_trailer.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/60"></div>
           </div>
