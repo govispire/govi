@@ -188,8 +188,18 @@ export default function StrategicBrandContent() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-24 bg-gray-900 text-white" ref={ref2}>
-          <div className="container mx-auto px-4">
+        <section className="py-24 text-white relative" ref={ref2}>
+          {/* Background image with overlay */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={videoProductionImages[0]} 
+              alt="Content Strategy Background" 
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-gray-900/90 to-black/95"></div>
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <motion.div 
               className="text-center max-w-3xl mx-auto mb-16"
               initial={{ opacity: 0, y: 30 }}
