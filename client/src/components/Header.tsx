@@ -47,8 +47,8 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/">
-            <a className="text-2xl font-display font-bold">VIEO Productions</a>
+          <Link href="/" className="text-2xl font-display font-bold">
+            VIEO Productions
           </Link>
           
           {/* Desktop Navigation */}
