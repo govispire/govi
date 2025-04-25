@@ -108,8 +108,23 @@ export default function Contact() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-to-b from-gray-900 to-black text-white">
-          <div className="container mx-auto px-4">
+        <section className="pt-32 pb-20 text-white relative">
+          {/* Background image with overlay */}
+          <div className="absolute inset-0 z-0">
+            <video 
+              className="absolute w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.1-scaled.webp"
+            >
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-photographer-working-on-a-fashion-shoot-42759-large.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-gray-900/90 to-black/95"></div>
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <motion.span 
                 className="inline-block text-amber-400 uppercase tracking-widest text-sm mb-3 font-medium"
@@ -329,13 +344,36 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Google Map Section (Placeholder) */}
-        <section className="h-96 relative">
-          <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-            <div className="text-center">
-              <i className="fas fa-map-marker-alt text-4xl text-amber-500 mb-3"></i>
-              <h3 className="text-xl font-medium">Google Maps Integration</h3>
-              <p className="text-gray-500">Map would be embedded here in a production environment</p>
+        {/* Map Section with Visual Background */}
+        <section className="h-96 relative overflow-hidden">
+          <div className="absolute inset-0">
+            <img 
+              src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+              alt="Mumbai aerial view" 
+              className="w-full h-full object-cover object-center" 
+            />
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+          
+          <div className="relative z-10 h-full flex items-center justify-center text-white">
+            <div className="bg-black/70 p-8 md:p-10 rounded-xl max-w-xl text-center backdrop-blur-sm">
+              <div className="w-16 h-16 rounded-full bg-amber-500 mx-auto flex items-center justify-center mb-6">
+                <i className="fas fa-map-marker-alt text-2xl text-white"></i>
+              </div>
+              <h3 className="text-2xl font-display font-bold mb-4">Visit Our Studio</h3>
+              <p className="text-gray-300 mb-6">
+                Located in the heart of Mumbai's creative district, our studio is where ideas come to life. 
+                Drop by for a coffee and a chat about your next project.
+              </p>
+              <a 
+                href="https://maps.google.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-6 py-3 bg-amber-500 text-black font-medium rounded-md hover:bg-amber-400 transition-colors duration-300"
+              >
+                <i className="fas fa-directions mr-2"></i>
+                Get Directions
+              </a>
             </div>
           </div>
         </section>

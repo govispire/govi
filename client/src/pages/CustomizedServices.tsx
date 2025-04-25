@@ -280,8 +280,23 @@ export default function CustomizedServices() {
         </section>
 
         {/* Process Section */}
-        <section className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
-          <div className="container mx-auto px-4">
+        <section className="py-24 text-white relative">
+          {/* Background image with overlay */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={designPortfolioImages[3]} 
+              alt="Creative Process Background" 
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-black/90 to-black/95"></div>
+            
+            {/* Subtle animated pattern overlay */}
+            <div className="absolute inset-0 opacity-10 mix-blend-overlay">
+              <div className="absolute inset-0" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.3" fill-rule="evenodd"%3E%3Cpath d="M0 20L20 0L40 20L20 40z"/%3E%3C/g%3E%3C/svg%3E")', backgroundSize: '30px 30px' }}></div>
+            </div>
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <motion.div 
               className="text-center max-w-3xl mx-auto mb-16"
               initial={{ opacity: 0, y: 30 }}
@@ -380,8 +395,18 @@ export default function CustomizedServices() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
-          <div className="container mx-auto px-4">
+        <section className="py-20 relative">
+          {/* Background image with overlay */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={luxuryBrandImages[5]} 
+              alt="Custom services background" 
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-black/90"></div>
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="bg-gradient-to-br from-amber-400 to-yellow-500 rounded-xl overflow-hidden shadow-2xl">
               <div className="lg:flex items-stretch">
                 <div className="lg:w-3/5 p-10 lg:p-16">
