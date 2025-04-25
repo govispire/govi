@@ -37,7 +37,9 @@ function App() {
   return (
     <>
       <ScrollProgressBar />
-      <Router />
+      <PageTransition>
+        <Router />
+      </PageTransition>
       <Toaster />
     </>
   );
