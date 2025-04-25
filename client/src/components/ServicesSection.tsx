@@ -16,7 +16,7 @@ const services = [
   {
     title: "Creative Video Solution",
     description: "Engaging commercials, brand films, and promotional content that tell your story with cinematic excellence.",
-    image: videoProductionImages[0],
+    image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-3.3-1097x1536.webp",
     link: "/creative-video-solution",
     buttonText: "Explore Now",
     icon: "fa-video"
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Strategic Brand Content",
     description: "Developing engaging digital content for marketing and social media to build your audience and engagement.",
-    image: commercialPhotographyImages[3],
+    image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-fields-6-768x1152.webp",
     link: "/strategic-brand-content",
     buttonText: "Explore Now",
     icon: "fa-bullhorn"
@@ -57,7 +57,7 @@ const services = [
 
 export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -75,7 +75,7 @@ export default function ServicesSection() {
           >
             What We Do Best
           </AnimatedElement>
-          
+
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="relative">
               <AnimatedText 
@@ -93,7 +93,7 @@ export default function ServicesSection() {
               ></motion.span>
             </span>
           </h2>
-          
+
           <AnimatedElement 
             variant="fadeIn" 
             delay={0.5} 
@@ -102,7 +102,7 @@ export default function ServicesSection() {
             Comprehensive creative solutions tailored to elevate your brand presence
           </AnimatedElement>
         </AnimatedSection>
-        
+
         {/* Services Grid */}
         <AnimatedSection
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"
@@ -143,7 +143,7 @@ export default function ServicesSection() {
                     transition={{ duration: 0.3 }}
                   ></motion.div>
                 </div>
-                
+
                 <div className="absolute inset-0 z-10 flex flex-col justify-between p-8 text-white">
                   {/* Top icon */}
                   <div className="text-center mb-4">
@@ -156,7 +156,7 @@ export default function ServicesSection() {
                       <i className={`fas ${service.icon} text-2xl`}></i>
                     </motion.div>
                   </div>
-                  
+
                   {/* Bottom content */}
                   <div>
                     <motion.div
