@@ -87,9 +87,9 @@ export default function StrategicBrandContent() {
               muted
               loop
               playsInline
-              poster={commercialPhotographyImages[3]}
+              poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_hero.webp"
             >
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-man-focusing-with-a-professional-camera-42742-large.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_video.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/70"></div>
           </div>
@@ -306,9 +306,9 @@ export default function StrategicBrandContent() {
                   <video 
                     className="w-full h-full object-cover"
                     controls
-                    poster={videoProductionImages[1]}
+                    poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_showcase.webp"
                   >
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-female-photographer-taking-landscape-pictures-with-a-professional-42795-large.mp4" type="video/mp4" />
+                    <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_showcase.mp4" type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-20 h-20 rounded-full bg-amber-500 bg-opacity-90 flex items-center justify-center cursor-pointer hover:bg-opacity-100 transition-all">
