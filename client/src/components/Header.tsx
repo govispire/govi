@@ -53,9 +53,24 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="font-medium hover:text-gray-600 transition-colors">Home</a>
-            <a href="#services" className="font-medium hover:text-gray-600 transition-colors">Services</a>
-            <a href="#contact" className="font-medium hover:text-gray-600 transition-colors">Contact</a>
+            <Link href="/" className="font-medium hover:text-amber-600 transition-colors">Home</Link>
+            <div className="relative group">
+              <span className="font-medium cursor-pointer hover:text-amber-600 transition-colors flex items-center">
+                Services <i className="fas fa-chevron-down text-xs ml-1 mt-1"></i>
+              </span>
+              <div className="absolute left-0 top-full mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <Link href="/brand-visual-identity" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
+                  Brand Visual Identity
+                </Link>
+                <Link href="/strategic-brand-content" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
+                  Strategic Brand Content
+                </Link>
+                <Link href="/customized-services" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
+                  Customized Services
+                </Link>
+              </div>
+            </div>
+            <Link href="/contact" className="font-medium hover:text-amber-600 transition-colors">Contact</Link>
           </nav>
           
           {/* Mobile Navigation Toggle */}
@@ -83,27 +98,49 @@ export default function Header() {
           >
             <div className="container mx-auto px-4 py-3">
               <nav className="flex flex-col space-y-4">
-                <a 
-                  href="#" 
-                  className="py-2 font-medium hover:text-gray-600"
+                <Link 
+                  href="/" 
+                  className="py-2 font-medium hover:text-amber-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
-                </a>
-                <a 
-                  href="#services" 
-                  className="py-2 font-medium hover:text-gray-600"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Services
-                </a>
-                <a 
-                  href="#contact" 
-                  className="py-2 font-medium hover:text-gray-600"
+                </Link>
+                
+                {/* Services Submenu */}
+                <div className="py-1">
+                  <div className="py-2 font-medium mb-1">Services</div>
+                  <div className="pl-4 border-l-2 border-gray-200 ml-2 space-y-3">
+                    <Link 
+                      href="/brand-visual-identity" 
+                      className="py-2 block text-gray-700 hover:text-amber-600 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Brand Visual Identity
+                    </Link>
+                    <Link 
+                      href="/strategic-brand-content" 
+                      className="py-2 block text-gray-700 hover:text-amber-600 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Strategic Brand Content
+                    </Link>
+                    <Link 
+                      href="/customized-services" 
+                      className="py-2 block text-gray-700 hover:text-amber-600 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Customized Services
+                    </Link>
+                  </div>
+                </div>
+                
+                <Link 
+                  href="/contact" 
+                  className="py-2 font-medium hover:text-amber-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
-                </a>
+                </Link>
               </nav>
             </div>
           </motion.div>
