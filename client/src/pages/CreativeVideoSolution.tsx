@@ -603,15 +603,24 @@ export default function CreativeVideoSolution() {
                     <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
                   </Link>
                 </div>
-                <div className="md:w-1/2 relative h-60 md:h-auto">
-                  <img 
-                    src={videoProductionImages[4]} 
-                    alt="Video Production" 
+                <div className="md:w-1/2 relative group cursor-pointer overflow-hidden">
+                  <video 
                     className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-amber-500 bg-opacity-80 flex items-center justify-center cursor-pointer hover:bg-opacity-100 transition-all">
-                      <i className="fas fa-play text-white text-2xl"></i>
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-4_345.mp4" type="video/mp4" />
+                  </video>
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"></div>
+                  
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center transform transition-transform duration-300 group-hover:scale-110">
+                      <div className="w-20 h-20 rounded-full bg-amber-400 flex items-center justify-center mx-auto shadow-lg">
+                        <i className="fas fa-play text-black text-xl"></i>
+                      </div>
+                      <span className="block text-white mt-4 font-medium">Watch Our Showreel</span>
                     </div>
                   </div>
                 </div>
