@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'wouter';
 import { videoProductionImages } from '@/lib/images';
 
@@ -92,6 +92,15 @@ export default function CreativeVideoSolution() {
     threshold: 0.1
   });
 
+  // State for animation particles
+  const [particles] = useState(Array.from({ length: 25 }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    size: Math.random() * 10 + 5,
+    duration: Math.random() * 10 + 10
+  })));
+
   return (
     <>
       <Header />
@@ -99,18 +108,96 @@ export default function CreativeVideoSolution() {
         {/* Hero Section with Full-Screen Video Background */}
         <section className="relative h-screen overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <video
-              ref={videoRef}
-              className="absolute w-full h-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster={videoProductionImages[1]}
-            >
-              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/60"></div>
+            {/* Background image with parallax effect */}
+            <motion.div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ 
+                backgroundImage: `url(${videoProductionImages[0]})`, 
+                backgroundAttachment: 'fixed',
+              }}
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.5 }}
+            />
+            
+            {/* Animated particles overlay */}
+            <div className="absolute inset-0 overflow-hidden">
+              {particles.map((particle) => (
+                <motion.div
+                  key={particle.id}
+                  className="absolute rounded-full bg-amber-500 opacity-20"
+                  style={{
+                    left: `${particle.x}%`,
+                    top: `${particle.y}%`,
+                    width: `${particle.size}px`,
+                    height: `${particle.size}px`,
+                  }}
+                  animate={{
+                    x: [0, Math.random() * 200 - 100],
+                    y: [0, Math.random() * 200 - 100],
+                    opacity: [0.2, 0.5, 0],
+                  }}
+                  transition={{
+                    duration: particle.duration,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                />
+              ))}
+            </div>
+            
+            {/* Video overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
+                <div className="relative w-full lg:w-2/3 mx-auto aspect-video overflow-hidden rounded-lg shadow-2xl">
+                  <video
+                    ref={videoRef}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    poster={videoProductionImages[1]}
+                  >
+                    <source src="https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4" type="video/mp4" />
+                  </video>
+                  {/* Gradient overlay on video */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  
+                  {/* Video controls overlay */}
+                  <div className="absolute bottom-4 right-4 flex space-x-2">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-colors duration-300"
+                      onClick={() => {
+                        if (videoRef.current) {
+                          videoRef.current.currentTime = 0;
+                          videoRef.current.play();
+                        }
+                      }}
+                    >
+                      <i className="fas fa-play"></i>
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-colors duration-300"
+                      onClick={() => {
+                        if (videoRef.current) {
+                          videoRef.current.muted = !videoRef.current.muted;
+                        }
+                      }}
+                    >
+                      <i className="fas fa-volume-mute"></i>
+                    </motion.button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Dark overlay with gradient for better text visibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-black/70"></div>
           </div>
 
           <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
@@ -150,28 +237,30 @@ export default function CreativeVideoSolution() {
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-medium rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
                 >
-                  <span className="mr-2">Start Your Project</span>
+                  <span className="mr-2">Schedule a Call</span>
                   <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
                 </Link>
-                <button
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
-                  onClick={() => {
-                    if (videoRef.current) {
-                      videoRef.current.currentTime = 0;
-                      videoRef.current.play();
-                    }
-                  }}
                 >
-                  <i className="fas fa-play mr-2"></i>
-                  Play Showreel
-                </button>
+                  <i className="fas fa-calendar-check mr-2"></i>
+                  Schedule Connect
+                </Link>
               </motion.div>
             </div>
           </div>
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-white animate-bounce">
-            <i className="fas fa-chevron-down text-2xl"></i>
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-white">
+            <motion.div 
+              animate={{ y: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="flex flex-col items-center"
+            >
+              <span className="text-sm mb-2 text-amber-300">Explore Our Services</span>
+              <i className="fas fa-chevron-down text-xl"></i>
+            </motion.div>
           </div>
         </section>
 
