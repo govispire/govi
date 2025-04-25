@@ -37,6 +37,15 @@ const commercialPhotographyImages = [
   "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Marketing photo
 ];
 
+// Product photography specific images
+const productPhotographyImages = [
+  "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product closeup
+  "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Jewelry product
+  "https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product arrangement
+  "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // E-commerce style
+  "https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product collection
+];
+
 // Gallery showcase images
 const galleryImages = [
   "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Portfolio sample
@@ -69,6 +78,7 @@ export {
   videoProductionImages,
   designPortfolioImages,
   commercialPhotographyImages,
+  productPhotographyImages,
   galleryImages,
   possibilitiesImages,
   portfolioShowcase
