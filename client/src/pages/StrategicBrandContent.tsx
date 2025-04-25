@@ -89,7 +89,7 @@ export default function StrategicBrandContent() {
               playsInline
               poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_hero.webp"
             >
-              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_video.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com//wp-content//uploads//2025//03//Content-creation-promo.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/70"></div>
           </div>
@@ -153,7 +153,7 @@ export default function StrategicBrandContent() {
                 We develop strategic content that not only looks beautiful but drives meaningful business results by connecting with your audience at every touchpoint.
               </p>
             </motion.div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {contentTypes.map((type, index) => (
                 <motion.div 
@@ -198,7 +198,7 @@ export default function StrategicBrandContent() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-gray-900/90 to-black/95"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <motion.div 
               className="text-center max-w-3xl mx-auto mb-16"
@@ -212,7 +212,7 @@ export default function StrategicBrandContent() {
                 The right content strategy doesn't just look good—it delivers measurable business results that impact your bottom line.
               </p>
             </motion.div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {statsItems.map((stat, index) => (
                 <motion.div 
@@ -244,7 +244,7 @@ export default function StrategicBrandContent() {
                 <p className="text-gray-600 mb-10">
                   We don't just create random content. We develop comprehensive content strategies that align with your business goals and resonate with your target audience.
                 </p>
-                
+
                 <div className="space-y-6">
                   <div className="flex">
                     <div className="flex-shrink-0 mr-4">
@@ -257,7 +257,7 @@ export default function StrategicBrandContent() {
                       <p className="text-gray-600">We start by understanding your audience, industry, competitors, and business objectives to inform our content approach.</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0 mr-4">
                       <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
@@ -269,7 +269,7 @@ export default function StrategicBrandContent() {
                       <p className="text-gray-600">We craft a comprehensive content plan that outlines topics, formats, platforms, and goals for each piece of content.</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0 mr-4">
                       <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
@@ -281,7 +281,7 @@ export default function StrategicBrandContent() {
                       <p className="text-gray-600">Our team of content specialists creates high-quality, engaging content that meets your strategic objectives.</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0 mr-4">
                       <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
@@ -295,7 +295,7 @@ export default function StrategicBrandContent() {
                   </div>
                 </div>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView3 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -316,7 +316,7 @@ export default function StrategicBrandContent() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Testimonials */}
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                   {testimonials.map((testimonial, index) => (
