@@ -40,7 +40,7 @@ const services = [
   {
     title: "Graphic Design",
     description: "Designing powerful print and digital assets for consistent and impactful brand presence.",
-    image: designPortfolioImages[1],
+    image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_32-300x200.webp",
     link: "/contact",
     buttonText: "Enquire Now",
     icon: "fa-pen-ruler"
