@@ -44,22 +44,27 @@ export default function BrandVisualIdentity() {
     {
       title: "Brand Identity System",
       category: "Corporate Rebrand",
-      image: luxuryBrandImages[0],
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_17.webp",
     },
     {
       title: "Visual Language Development",
       category: "Startup Brand",
-      image: luxuryBrandImages[1],
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_19.webp",
     },
     {
       title: "Logo & Identity Package",
       category: "Fashion Brand",
-      image: luxuryBrandImages[2],
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp",
     },
     {
       title: "Brand Guidelines",
       category: "Technology Company",
-      image: luxuryBrandImages[4],
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_1.webp",
+    },
+    {
+      title: "Brand Identity Design",
+      category: "Luxury Hospitality",
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp",
     }
   ];
 
@@ -96,7 +101,7 @@ export default function BrandVisualIdentity() {
                 muted
                 loop
                 playsInline
-                poster={luxuryBrandImages[1]}
+                poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp"
               >
                 <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_16.mp4" type="video/mp4" />
               </video>
@@ -164,7 +169,7 @@ export default function BrandVisualIdentity() {
                     loop
                     playsInline
                     controls
-                    poster={luxuryBrandImages[1]}
+                    poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp"
                   >
                     <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_16.mp4" type="video/mp4" />
                   </video>
@@ -212,7 +217,7 @@ export default function BrandVisualIdentity() {
               >
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
                   <img 
-                    src={luxuryBrandImages[1]} 
+                    src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_19.webp" 
                     alt="Brand Visual Identity" 
                     className="w-full h-auto"
                   />
@@ -285,7 +290,7 @@ export default function BrandVisualIdentity() {
                       loop
                       playsInline
                       controls
-                      poster={luxuryBrandImages[1]}
+                      poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp"
                     >
                       <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_16.mp4" type="video/mp4" />
                     </video>
@@ -431,7 +436,7 @@ export default function BrandVisualIdentity() {
                 </div>
                 <div className="md:w-1/2 relative h-64 md:h-auto">
                   <img 
-                    src={luxuryBrandImages[4]} 
+                    src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_1.webp" 
                     alt="Brand Identity Design" 
                     className="w-full h-full object-cover"
                   />
