@@ -93,7 +93,7 @@ export default function BrandVisualIdentity() {
               playsInline
               poster={luxuryBrandImages[1]}
             >
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-graphic-designer-working-on-computer-9053-large.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_16.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/70"></div>
           </div>
