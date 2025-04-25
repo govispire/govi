@@ -112,7 +112,7 @@ export default function CreativeVideoSolution() {
             <motion.div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ 
-                backgroundImage: `url(${videoProductionImages[0]})`, 
+                backgroundImage: `url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80')`, 
                 backgroundAttachment: 'fixed',
               }}
               initial={{ scale: 1.1 }}
@@ -149,7 +149,7 @@ export default function CreativeVideoSolution() {
             {/* Video overlay */}
             <div className="absolute inset-0 flex items-center justify-center mt-24">
               <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
-                <div className="relative w-full lg:w-2/3 mx-auto aspect-video overflow-hidden rounded-lg shadow-2xl">
+                <div className="relative w-full lg:w-4/5 mx-auto aspect-video overflow-hidden rounded-lg shadow-2xl">
                   <video
                     ref={videoRef}
                     className="w-full h-full object-cover"

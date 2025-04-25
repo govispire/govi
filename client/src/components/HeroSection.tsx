@@ -22,10 +22,10 @@ export default function HeroSection() {
       
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
         {/* Hero video and content container */}
-        <div className="w-full max-w-5xl flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Foreground video */}
           <motion.div 
-            className="w-full lg:w-3/5 overflow-hidden rounded-lg shadow-2xl border border-gray-800"
+            className="w-full lg:w-4/5 mx-auto overflow-hidden rounded-lg shadow-2xl border border-gray-800"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
