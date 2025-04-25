@@ -16,40 +16,46 @@ export default function CreativeVideoSolution() {
 
   const videoServices = [
     {
-      title: "Corporate Videos",
-      description: "Informative and engaging videos that highlight your company's values, products, or services for both internal and external audiences.",
+      title: "Corporate Brand Film",
+      description: "Cinematic storytelling that establishes your corporate identity, communicates your vision and reinforces your market positioning.",
       icon: "fa-building",
-      image: videoProductionImages[0]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Luxury_16.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4"
     },
     {
       title: "Brand Films",
       description: "Cinematic storytelling that captures the essence of your brand's mission, vision, and values in a compelling narrative.",
       icon: "fa-film",
-      image: videoProductionImages[1]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-1.mp4"
     },
     {
-      title: "Product Demonstrations",
+      title: "Product Launch Video",
       description: "Showcase your products in action with clear, informative, and visually appealing demonstrations that highlight key features and benefits.",
       icon: "fa-box-open",
-      image: videoProductionImages[2]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_1.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-1.mp4"
     },
     {
-      title: "Event Coverage",
+      title: "Event Highlight Video",
       description: "Professional documentation of your events, from conferences and launches to corporate gatherings, capturing the key moments and atmosphere.",
       icon: "fa-calendar-check",
-      image: videoProductionImages[3]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.1-scaled.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4"
     },
     {
       title: "Testimonial Videos",
       description: "Authentic customer or employee testimonials that build trust and credibility through real stories and experiences.",
       icon: "fa-comment-dots",
-      image: videoProductionImages[4]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.5-scaled.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-1.mp4"
     },
     {
-      title: "Social Media Content",
+      title: "Social Media Campaign",
       description: "Short-form, engaging video content optimized for various social platforms to drive engagement and increase your digital presence.",
       icon: "fa-share-alt",
-      image: videoProductionImages[5]
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.6-scaled.webp",
+      video: "https://vieoproductions.com/wp-content/uploads/2025/03/Creative-Video-solutions-Final-1.mp4"
     }
   ];
 
@@ -349,12 +355,26 @@ export default function CreativeVideoSolution() {
                   transition={{ duration: 0.7, delay: index * 0.1 + 0.3 }}
                   whileHover={{ y: -5 }}
                 >
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-48 overflow-hidden relative group">
                     <img 
                       src={service.image} 
                       alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:opacity-0"
                     />
+                    <video 
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={service.video} type="video/mp4" />
+                    </video>
+                    <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                      <span className="text-white text-xs font-medium px-2 py-1 bg-amber-500 rounded-sm">
+                        Watch Preview
+                      </span>
+                    </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="flex items-center mb-4">
@@ -375,8 +395,22 @@ export default function CreativeVideoSolution() {
         </section>
 
         {/* Process Section */}
-        <section className="py-24 bg-gradient-to-b from-gray-900 to-black text-white" ref={ref3}>
-          <div className="container mx-auto px-4">
+        <section className="py-24 text-white relative" ref={ref3}>
+          {/* Background image with overlay */}
+          <div className="absolute inset-0 z-0">
+            <video 
+              className="absolute w-full h-full object-cover opacity-40"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/VIDEO-Web-1.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-black/95 to-black/95"></div>
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <motion.div 
               className="text-center max-w-3xl mx-auto mb-16"
               initial={{ opacity: 0, y: 30 }}
