@@ -47,8 +47,12 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-display font-bold">
-            VIEO Productions
+          <Link href="/" className="flex items-center">
+            <img 
+              src="https://vieo.in/wp-content/uploads/2024/08/vieo-blue-logo.svg" 
+              alt="VIEO Productions" 
+              className="h-10"
+            />
           </Link>
           
           {/* Desktop Navigation */}
@@ -70,6 +74,9 @@ export default function Header() {
                 </Link>
                 <Link href="/customized-services" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
                   Customized Services
+                </Link>
+                <Link href="/commercial-photography" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
+                  Commercial Photography
                 </Link>
               </div>
             </div>
@@ -140,6 +147,13 @@ export default function Header() {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Customized Services
+                    </Link>
+                    <Link 
+                      href="/commercial-photography" 
+                      className="py-2 block text-gray-700 hover:text-amber-600 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Commercial Photography
                     </Link>
                   </div>
                 </div>
