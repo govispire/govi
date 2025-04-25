@@ -82,7 +82,7 @@ export default function StrategicBrandContent() {
         <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <video 
-              className="absolute w-full h-full object-cover opacity-40"
+              className="absolute w-full h-full object-cover opacity-60"
               autoPlay
               muted
               loop
