@@ -13,7 +13,7 @@ const luxuryBrandImages = [
 
 // Creative video production scenes
 const videoProductionImages = [
-  "https://images.unsplash.com/photo-1579136051653-838697b0a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Video camera setup
+  "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_visual_Identity_Luxury_22.webp", // Video camera setup
   "https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Video production
   "https://images.unsplash.com/photo-1585388434272-8e931380ffe4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Editing studio
   "https://images.unsplash.com/photo-1599240211563-782e8e0e5360?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Film equipment
