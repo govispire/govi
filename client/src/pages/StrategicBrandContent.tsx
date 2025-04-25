@@ -89,7 +89,7 @@ export default function StrategicBrandContent() {
               playsInline
               poster="https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Strategic_Brand_Content_hero.webp"
             >
-              <source src="https://vieoproductions.com//wp-content//uploads//2025//03//Content-creation-promo.mp4" type="video/mp4" />
+              <source src="https://vieoproductions.com/wp-content/uploads/2025/03/Content-creation-promo.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/70"></div>
           </div>
