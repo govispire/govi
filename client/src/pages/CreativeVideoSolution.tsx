@@ -106,7 +106,7 @@ export default function CreativeVideoSolution() {
       <Header />
       <main>
         {/* Hero Section with Full-Screen Video Background */}
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative min-h-screen pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 z-0">
             {/* Background image with parallax effect */}
             <motion.div 
@@ -147,7 +147,7 @@ export default function CreativeVideoSolution() {
             </div>
             
             {/* Video overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center mt-24">
               <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                 <div className="relative w-full lg:w-2/3 mx-auto aspect-video overflow-hidden rounded-lg shadow-2xl">
                   <video
