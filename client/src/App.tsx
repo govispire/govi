@@ -1,6 +1,7 @@
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
+import PageTransition from "@/components/PageTransition";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import BrandVisualIdentity from "@/pages/BrandVisualIdentity";
