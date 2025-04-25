@@ -2,6 +2,8 @@ import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import PageTransition from "@/components/PageTransition";
+import LoadingScreen from "@/components/LoadingScreen";
+import { LoadingProvider, useLoading } from "@/components/LoadingContext";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import BrandVisualIdentity from "@/pages/BrandVisualIdentity";
@@ -33,15 +35,29 @@ function Router() {
   );
 }
 
-function App() {
+function AppContent() {
+  const { isLoading, endLoading } = useLoading();
+  
   return (
     <>
+      <LoadingScreen 
+        isLoading={isLoading} 
+        onLoadingComplete={endLoading} 
+      />
       <ScrollProgressBar />
       <PageTransition>
         <Router />
       </PageTransition>
       <Toaster />
     </>
+  );
+}
+
+function App() {
+  return (
+    <LoadingProvider>
+      <AppContent />
+    </LoadingProvider>
   );
 }
 
