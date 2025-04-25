@@ -5,6 +5,7 @@ import Contact from "@/pages/Contact";
 import BrandVisualIdentity from "@/pages/BrandVisualIdentity";
 import StrategicBrandContent from "@/pages/StrategicBrandContent";
 import CustomizedServices from "@/pages/CustomizedServices";
+import CreativeVideoSolution from "@/pages/CreativeVideoSolution";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/brand-visual-identity" component={BrandVisualIdentity} />
       <Route path="/strategic-brand-content" component={StrategicBrandContent} />
       <Route path="/customized-services" component={CustomizedServices} />
+      <Route path="/creative-video-solution" component={CreativeVideoSolution} />
       
       {/* Contact page */}
       <Route path="/contact" component={Contact} />

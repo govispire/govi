@@ -62,6 +62,9 @@ export default function Header() {
                 <Link href="/brand-visual-identity" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
                   Brand Visual Identity
                 </Link>
+                <Link href="/creative-video-solution" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
+                  Creative Video Solution
+                </Link>
                 <Link href="/strategic-brand-content" className="block px-4 py-3 hover:bg-gray-50 text-gray-800">
                   Strategic Brand Content
                 </Link>
@@ -116,6 +119,13 @@ export default function Header() {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Brand Visual Identity
+                    </Link>
+                    <Link 
+                      href="/creative-video-solution" 
+                      className="py-2 block text-gray-700 hover:text-amber-600 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Creative Video Solution
                     </Link>
                     <Link 
                       href="/strategic-brand-content" 
