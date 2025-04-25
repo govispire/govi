@@ -29,39 +29,39 @@ const designPortfolioImages = [
 
 // Commercial photography examples
 const commercialPhotographyImages = [
-  "https://images.unsplash.com/photo-1554941829-202a0b2403b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product photography
-  "https://images.unsplash.com/photo-1566075247408-2fc8db5d9b76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Brand photoshoot
-  "https://images.unsplash.com/photo-1562664377-709f2c337eb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Commercial photo
-  "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Content creation
-  "https://images.unsplash.com/photo-1505022610485-0249ba5b3675?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Portfolio image
-  "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Marketing photo
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-fields-2-scaled.webp", // Product photography
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp", // Brand photoshoot
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.1-scaled.webp", // Commercial photo
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.3-scaled.webp", // Content creation
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.5-scaled.webp", // Portfolio image
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-fields-6.webp", // Marketing photo
 ];
 
 // Product photography specific images
 const productPhotographyImages = [
-  "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product closeup
-  "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Jewelry product
-  "https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product arrangement
-  "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // E-commerce style
-  "https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Product collection
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.3-scaled.webp", // Product closeup
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.2-scaled.webp", // Jewelry product
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.6-scaled.webp", // Product arrangement
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-6.5-scaled.webp", // E-commerce style
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-6.4-scaled.webp", // Product collection
 ];
 
 // Gallery showcase images
 const galleryImages = [
-  "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Portfolio sample
-  "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Portfolio sample
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.1-scaled.webp", // Portfolio sample
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.3-scaled.webp", // Portfolio sample
 ];
 
 // Service section gallery images
 const possibilitiesImages = [
-  "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1542060748-10c28b62716f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1620987278429-ab178d6eb547?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1566075247408-2fc8db5d9b76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1625929679350-30eb7ddcc9e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1562664377-709f2c337eb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_1.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/VIEO_Productions_Brand_Visual_Identity_Eco_19.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.1.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.2-scaled.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.3-scaled.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-5.6-scaled.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-4.5-scaled.webp",
+  "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-6.5-scaled.webp"
 ];
 
 // Combined portfolio showcase
