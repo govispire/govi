@@ -44,15 +44,17 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm text-gray-900' : 'bg-black bg-opacity-80 text-white'}`}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
-            <img 
-              src="https://vieo.in/wp-content/uploads/2024/08/vieo-blue-logo.svg" 
-              alt="VIEO Productions" 
-              className="h-10"
-            />
+            <div className={`bg-white rounded-md px-2 py-1 ${scrolled ? '' : 'bg-opacity-90'}`}>
+              <img 
+                src="https://vieo.in/wp-content/uploads/2024/08/vieo-blue-logo.svg" 
+                alt="VIEO Productions" 
+                className="h-10"
+              />
+            </div>
           </Link>
           
           {/* Desktop Navigation */}
@@ -86,11 +88,11 @@ export default function Header() {
           {/* Mobile Navigation Toggle */}
           <button 
             ref={buttonRef}
-            className="md:hidden text-dark focus:outline-none" 
+            className="md:hidden focus:outline-none" 
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
+            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl ${scrolled ? 'text-gray-900' : 'text-white'}`}></i>
           </button>
         </div>
       </div>
