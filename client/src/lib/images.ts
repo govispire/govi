@@ -73,6 +73,22 @@ const portfolioShowcase = [
   galleryImages[0]
 ];
 
+//Example of where the change might be applied.  This is an assumption.
+const contentTypes = [
+    {
+      title: "Strategic Brand Content",
+      description: "Thought leadership articles, blog posts, and other content designed to position your brand as an authority in your industry.",
+      icon: "fa-file-alt",
+      image: "https://vieoproductions.com/wp-content/uploads/2025/03/commercial-photography-fields-6-1024x1536.webp"
+    },
+    {
+      title: "Video Content",
+      description: "Compelling video narratives that tell your brand story and engage audiences on a deeper emotional level.",
+      icon: "fa-film",
+      image: videoProductionImages[1]
+    }
+  ];
+
 export {
   luxuryBrandImages,
   videoProductionImages,
@@ -81,5 +97,6 @@ export {
   productPhotographyImages,
   galleryImages,
   possibilitiesImages,
-  portfolioShowcase
+  portfolioShowcase,
+  contentTypes
 };
